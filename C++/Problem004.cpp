@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 
 
-// Method that returns true if a given number is a palindrome
 bool isPalindrome(int num) {
 	std::string numStr {std::to_string(num)};
 	int len {numStr.length()};
@@ -16,10 +16,12 @@ bool isPalindrome(int num) {
 
 
 int main() {
-	for(int i = 999 * 999; i >= 100 * 100; i--) {
+	size_t d {3};
+
+	for(int i = pow(pow(10, d) - 1, 2); i >= pow(10, 2 * (d - 1)); i--) {
 		if(isPalindrome(i)) {
-			for(int j = 999; j >= 100; j--) {
-				if((i / j) * j == i && 100 <= (i / j) && (i / j) <= 999) {
+			for(int j = pow(10, d) - 1; j >= pow(10, d - 1); j--) {
+				if((i / j) * j == i && pow(10, d - 1) <= (i / j) && (i / j) <= pow(10, d) - 1) {
 					std::cout << i << std::endl;
 					return 0;
 				}
