@@ -9,6 +9,7 @@ while f1 < maxVal
 	f = f0 + f1
 	global f0 = f1
 	global f1 = f
+	
 	if f % 2 == 0
 		global sumEvn += f
 	end
