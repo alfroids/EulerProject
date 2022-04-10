@@ -5,4 +5,4 @@ I use them as a way to train my skills and learn new programming languages and a
 The languages I'm currently working on:
 1. Python
 2. C++
-3. Julia (soon)
+3. Julia
