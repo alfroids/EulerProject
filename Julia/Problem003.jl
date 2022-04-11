@@ -8,7 +8,7 @@ while p^2 < num
 	if num % p == 0
 		global num /= p
 	else
-		global p += 1
+		global p += 2
 	end
 end
 

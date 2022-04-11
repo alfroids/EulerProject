@@ -15,7 +15,7 @@ while true
 		end
 	end
 
-	global i += 1
+	global i += 2
 
 	if i > max
 		break

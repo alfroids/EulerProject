@@ -7,7 +7,7 @@ function primeFactors(n)
 			append!(factors, p)
 			n /= p
 		else
-			p += 1
+			p += 2
 		end
 	end
 
