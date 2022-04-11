@@ -15,7 +15,7 @@ while length(primes) < pos
 		end
 	end
 	
-	global i += 1
+	global i += 2
 end
 
 println(primes[end])
