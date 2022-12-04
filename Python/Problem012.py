@@ -1,17 +1,17 @@
 import math
 
 
-def get_divisors(n):
+def get_divisors(num):
 	div = []
 	i = 1
     
-	while i <= math.sqrt(n):
-		if (n % i == 0):
-			if (n / i == i):
+	while i <= math.sqrt(num):
+		if (num % i == 0):
+			if (num / i == i):
 				div.append(i)
 			else:
 				div.append(i)
-				div.append(int(n / i))
+				div.append(int(num / i))
 		i += 1
 
 	return div
